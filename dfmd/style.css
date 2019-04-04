@@ -1,0 +1,67 @@
+/*
+Theme Name: 东方美地
+Text Domain: dfmd
+*/
+
+html{ font-size: 20px;}
+
+.btn-brand, .page-item.active .page-link{ background-color: #003878; border-color: #003878;}
+
+.inner-brand{ display: inline-block; width: 7.2rem; height: 2.8rem; background: url(assets/images/logo.png) no-repeat; background-size: auto 100%; text-indent: -100vw;}
+header.header-small .inner-brand{ margin-top: .5rem; background-size: auto 75%;}
+
+header.header-transparent .inner-nav > ul > li a:after{ border-bottom: 10px; }
+header.header-transparent .inner-nav > ul > li.active > a::after{ bottom: -3px; height: .25rem; border-radius: .125rem;}
+.inner-nav .sub-menu.mega-menu-row li > a{ padding-left: 20px; padding-right: 20px;}
+.inner-nav .sub-menu li > a{ background-size: 0 100%; transition: all .8s;}
+.inner-nav .sub-menu li > a:hover{ background-color: #003878; background: linear-gradient(to right, #003878, #003878) no-repeat; background-size: 100% 100%; color: #fff; }
+
+
+.module, .module-cover{ background: #F6F9FD;}
+
+.gallery-group{ min-height: 25rem;}
+
+.off-canvas-sidebar{ background: #FFF; }
+
+.footer .widget-recent-entries ul li{ border-color: #0C6436;}
+
+.footer{ background: #004822;}
+.footer-widgets + .footer-bar{ border-top-color: #0C6436;}
+.footer-bar{ font-size: .7rem;}
+
+.maps-container{ height: 608px;}
+
+.pagination{ display: block;}
+.pagination .nav-links .page-numbers{ display: inline-block; padding: .45rem 1rem; background: #fff; border-radius: 100%; color: #788487; font-weight: bold;}
+.pagination .nav-links .page-numbers:hover{ background-color: #f4f4f4;}
+.pagination .screen-reader-text, .pagination .prev.page-numbers, .pagination .next.page-numbers{ display: none;}
+.pagination .nav-links { display: block; text-align: center;}
+.pagination .nav-links .current, .pagination .nav-links .current:hover{ background-color: #003878; color: #fff;}
+
+.filter{ text-align: center;}
+.filter li{ display: inline;}
+.filter li{ margin-left: .5rem; padding-left: .5rem;}
+.filter li+li{ border-left: 1px solid #ccc;}
+.filter li a{ display: inline-block; font-size: .8rem; color: #788487;}
+.filter li.current-cat a{ color: #003878; font-weight: bold;}
+
+/* home */
+.home .page-title{ display: none;}
+
+
+@media (max-width: 575.98px){
+header.header-small .inner-brand{ margin-top: .5rem; background-size: auto 65%;}
+}
+
+@media (max-width: 991.98px){
+.wrapper{ padding-top: 0;}
+.inner-navigation{ background: #003878;}
+.inner-nav .sub-menu, .inner-nav .mega-menu{ background: none;}
+}
+
+@media (min-width: 992px) {
+.inner-nav > ul > li{ line-height: 74px;}
+header.header-small .inner-nav > ul > li{ line-height: 60px;}
+.inner-nav > ul > li.dropdown .menu-item{ line-height: 1.5;}
+}
+
