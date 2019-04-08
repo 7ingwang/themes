@@ -5,6 +5,7 @@ Text Domain: dfmd
 
 html{ font-size: 20px;}
 
+.header{ opacity: .85;}
 .btn-brand, .page-item.active .page-link{ background-color: #003878; border-color: #003878;}
 
 .inner-brand{ display: inline-block; width: 7.2rem; height: 2.8rem; background: url(assets/images/logo.png) no-repeat; background-size: auto 100%; text-indent: -100vw;}
@@ -15,6 +16,7 @@ header.header-transparent .inner-nav > ul > li.active > a::after{ bottom: -3px; 
 .inner-nav .sub-menu.mega-menu-row li > a{ padding-left: 20px; padding-right: 20px;}
 .inner-nav .sub-menu li > a{ background-size: 0 100%; transition: all .8s;}
 .inner-nav .sub-menu li > a:hover{ background-color: #003878; background: linear-gradient(to right, #003878, #003878) no-repeat; background-size: 100% 100%; color: #fff; }
+.inner-nav .sub-menu{column-count: 3;}
 
 
 .module, .module-cover{ background: #F6F9FD;}
