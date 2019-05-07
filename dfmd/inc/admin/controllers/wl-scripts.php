@@ -32,7 +32,7 @@ function dfmd_scripts_footer() {
     wp_enqueue_script( 'popper', get_theme_file_uri( '/assets/js/custom/popper.min.js' ) );
     wp_enqueue_script( 'bootstrap', get_theme_file_uri( '/assets/js/bootstrap/bootstrap.min.js' ) );
     wp_enqueue_script( 'plugins', get_theme_file_uri( '/assets/js/custom/plugins.min.js' ) );
-    wp_enqueue_script( 'custom', get_theme_file_uri( '/assets/js/custom/custom.min.js' ) );
+    wp_enqueue_script( 'custom', get_theme_file_uri( '/assets/js/custom/custom.js' ) );
 }
 
 /* Enqueue Theme Style and Script Files in header */
