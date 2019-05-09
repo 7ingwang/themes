@@ -6,8 +6,6 @@
 get_header(); ?>
 
 
-	<!-- Wrapper-->
-        <div class="wrapper">
             <!-- Hero-->
             <section class="module-cover-slides fullscreen">
                 <ul class="slides-container">
@@ -15,7 +13,7 @@ get_header(); ?>
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-12">
-                                    <h1 class="m-b-20"><strong>无毒地坪漆专家</strong></h1>
+                                    <h1 class="m-b-20"><strong>无毒地坪专家</strong></h1>
                                     <p class="m-b-40">NON-TOXIC FLOOR PAINT EXPERT</p>
                                 </div>
                             </div>
@@ -32,13 +30,43 @@ get_header(); ?>
             </section>
             <!-- Hero end-->
 
+			<section class="module module-cover-pink text-center" id="worry">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 m-auto text-center"></div>
+							<h2>还在为<b>选择地坪</b>而烦恼吗？</h2>
+							<h3>Still worrying about choosing a floor?</h3>
+							<ul>
+								<li><span>01</span>地坪成本太高怎么办？</li>
+								<li><span>02</span>地坪使用年限太短怎么办？</li>
+								<li><span>03</span>地坪出现起砂起灰的问题怎么办？</li>
+								<li><span>04</span>地坪为什么会起泡？</li>
+								<li><span>05</span>地坪为什么会裂缝？</li>
+								<li><span>06</span>选择的公司售后没人管怎么办？</li>
+							</ul>
+							<p>您所担忧的，我们已经通通帮你想到专业的解决方案及优良的产品，实实在在帮你解决问题<a href="/contact" class="btn btn-success btn-sm">立即咨询</a></p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
             <!-- About-->
-            <section class="module divider-bottom">
+            <section class="module">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6 m-auto text-center">
-                            <h1>东方美地</h1>
-                            <p class="lead">无毒地坪漆专家</p>
+                            <h2>东方美地</h2>
+                            <h3>无毒地坪专家</h3>
+							<p>东方美地(北京)建筑装修装饰工程有限公司是一家集研、产、销、施工于一体的科技型地材企业，创始团队集聚了业界高学历、技术经验丰富的多名专家，专注于环保地坪领域。经过多年的研发推出了地坪彩釉，成为北京乃至华北地区无毒地坪行业领跑者……</p>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="space" data-my="60px" style="margin-top: 60px;"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p><img class="img-shadow" src="<?php echo get_template_directory_uri(); ?>/assets/images/business.jpg" alt=""></p>
                         </div>
                     </div>
                     <div class="row">
@@ -106,7 +134,7 @@ get_header(); ?>
             <!-- About end-->
 
             <!-- Portfolio-->
-            <section class="module p-b-0">
+            <section class="module module-cover-light" id="hot">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6 m-auto text-center">
@@ -119,9 +147,8 @@ get_header(); ?>
                         </div>
                     </div>
                 </div>
-                <div class="container-fluid">
-                    <div class="row row-portfolio" data-columns="3">
-                        <div class="grid-sizer"></div>
+                <div class="container">
+                    <div class="row">
                         <?php
 						$args=array(
 						    'cat' => 9,   // 分类ID
@@ -130,14 +157,18 @@ get_header(); ?>
 						query_posts($args);
 						if(have_posts()) : while (have_posts()) : the_post();
 						?>
-                        <div class="portfolio-item">
-                            <div class="portfolio-item-wrapper">
-                                <div class="portfolio-item-img"><a href="<?php the_permalink(); ?>"><img src="<?php echo catch_that_image();?>" alt="<?php the_title(); ?>"></a></div>
-                                <div class="portfolio-item-caption">
-                                    <h6 class="portfolio-item-title"><?php the_title(); ?></h6><span class="portfolio-item-subtitle serif"><?php the_excerpt(); ?></span>
-                                </div><a class="portfolio-item-link" href="<?php the_permalink(); ?>"></a>
+						
+						<div class="col-md-4">
+                            <div class="shop-grid-item">
+                                <div class="shop-item-thumb"><a href="<?php the_permalink(); ?>"><img src="<?php echo catch_that_image();?>" alt="<?php the_title(); ?>"></a>
+                                    <div class="shop-item-hidden"><a class="btn btn-new-white" href="<?php the_permalink(); ?>">详细了解</a></div>
+                                </div>
+                                <div class="shop-item-captions">
+                                    <h6 class="shop-item-title"><?php the_title(); ?></h6><span class="shop-item-price"><?php the_excerpt(); ?></span>
+                                </div>
                             </div>
                         </div>
+		
                         <?php endwhile; endif; wp_reset_query(); ?> 
                     </div>
                 </div>
@@ -146,7 +177,7 @@ get_header(); ?>
 
 
             <!-- Posts-->
-            <section class="module">
+            <section class="module" id="news">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6 m-auto text-center">
@@ -176,7 +207,7 @@ get_header(); ?>
                                 <div class="post-preview"><a href="<?php the_permalink(); ?>"><img src="<?php echo catch_that_image();?>" alt="<?php the_title(); ?>"></a></div>
                                 <div class="post-wrapper">
                                     <div class="post-header">
-                                        <h2 class="post-title"><a href="blog-single.html"><?php the_title(); ?></a></h2>
+                                        <h2 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
                                         <p class="post-date"> 
 											<?php echo esc_html( wl_theme_get_post_publish_date( get_the_id() ) ); ?>
 				                		</p>
@@ -191,8 +222,8 @@ get_header(); ?>
                                     </div>
                                 </div>
                             </article>
-                            <!-- Post end-->
                         </div>
+                        <!-- Post end-->
                             
 						<?php endwhile; endif; wp_reset_query(); ?> 
                         
@@ -200,9 +231,106 @@ get_header(); ?>
                 </div>
             </section>
             <!-- Posts end-->
+            
+            <!-- Clients-->
+            <section class="module module-cover-blue" id="clients">
+                <div class="container">
+	                <div class="col-md-6 m-auto text-center">
+                            <h2>我们的客户</h2>
+                        </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="owl-carousel clients-carousel" data-carousel-options="{&quot;dots&quot;: false}">
+                                <div class="client"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/clients/1.png" alt=""></div>
+                                <div class="client"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/clients/2.png" alt=""></div>
+                                <div class="client"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/clients/3.png" alt=""></div>
+                                <div class="client"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/clients/4.png" alt=""></div>
+                                <div class="client"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/clients/5.png" alt=""></div>
+                                <div class="client"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/clients/6.png" alt=""></div>
+                                <div class="client"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/clients/7.png" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row m-t-40">
+                        <div class="col-md-12">
+                            <div class="owl-carousel clients-carousel">
+                                <div class="client"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/clients/1.png" alt=""></div>
+                                <div class="client"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/clients/2.png" alt=""></div>
+                                <div class="client"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/clients/3.png" alt=""></div>
+                                <div class="client"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/clients/4.png" alt=""></div>
+                                <div class="client"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/clients/5.png" alt=""></div>
+                                <div class="client"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/clients/6.png" alt=""></div>
+                                <div class="client"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/clients/7.png" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Clients end-->
+            
+            <!-- FAQs-->
+            <section class="module module-cover-green" id="faq">
+                <div class="container">
+	                <div class="row">
+                        <div class="col-md-6 m-auto text-center">
+                            <h2>常见问题</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-9">
+                            <div class="accordion" id="accordion1">
+	                            
+	                            
+		                    <?php
+								$args=array(
+								    'cat' => 14,   // 分类ID
+								    'posts_per_page' => 3, // 显示篇数
+								);
+								query_posts($args);
+								$count = 0;
+								if(have_posts()) : while (have_posts()) : the_post();
+								$count++;
+							?>
+		                                            
+	                            <!-- Post-->
+	                 
+                                <div class="accordion-item <?php if($count < 2) echo "show";?>">
+                                    <div class="accordion-item-header">
+                                        <h6><a class="accordion-link  <?php if($count >1) echo "collapsed";?>" data-toggle="collapse" href="#collapse-<?php the_ID(); ?>"><?php the_title(); ?></a></h6>
+                                    </div>
+                                    <div class="collapse <?php if($count < 2) echo "show";?>" id="collapse-<?php the_ID(); ?>" data-parent="#accordion1">
+                                        <div class="accordion-item-body">
+                                            <p><?php the_excerpt(); ?></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Post end-->
+                            <?php endwhile; endif; wp_reset_query(); ?>
+                            
+
+                         
+                            
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                                <!-- Text widget-->
+                                <aside class="widget widget-text">
+                                    <div class="textwidget">
+	                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/faq.png" width="80" height="auto" style= "margin-bottom: 20px;" alt="FAQ">
+                                        <h6>想了解更多？</h6>
+                                        <p>我们的客服为您答解惑</p>
+                                        <p><a href="/contact" class="btn btn-success">联系我们</a></p>
+                                    </div>
+                                </aside>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- FAQs end-->
 
             <!-- Counters-->
-            <section class="module bg-gray p-b-0">
+            <section class="module module-cover-grey">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-3">

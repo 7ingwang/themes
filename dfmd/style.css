@@ -7,9 +7,14 @@ html{ font-size: 20px;}
 
 .header{ opacity: .85;}
 .btn-brand, .page-item.active .page-link{ background-color: #003878; border-color: #003878;}
+.header .pin{ position: absolute; right: 60px; top: 20px; font-size: 18px; color: #0D4273;}
+.header .pin i{ position: relative; top: 3px; margin-right: 6px; font-size: 24px; color: #0D4F2A;}
+.header-small .pin{ top: 15px; }
 
 .inner-brand{ display: inline-block; width: 7.2rem; height: 2.8rem; background: url(assets/images/logo.png) no-repeat; background-size: auto 100%; text-indent: -100vw;}
-header.header-small .inner-brand{ margin-top: .5rem; background-size: auto 75%;}
+
+.header .inner-brand{ margin-top: .5rem; background-size: auto 80%;}
+.header.header-small .inner-brand{ margin-top: .5rem; background-size: auto 75%;}
 
 header.header-transparent .inner-nav > ul > li a:after{ border-bottom: 10px; }
 header.header-transparent .inner-nav > ul > li.active > a::after{ bottom: -3px; height: .25rem; border-radius: .125rem;}
@@ -19,6 +24,10 @@ header.header-transparent .inner-nav > ul > li.active > a::after{ bottom: -3px; 
 
 
 .module, .module-cover{ background: #F6F9FD;}
+.module-cover-pink{ background-color: #F9F1FF;}
+.module-cover-light{ background-color: #fff;}
+.module-cover-green{ background-color: #F2FCFC;}
+.module-cover-grey{ background-color: #F5F5F5;}
 
 .gallery-group{ min-height: 25rem;}
 
@@ -46,12 +55,40 @@ header.header-transparent .inner-nav > ul > li.active > a::after{ bottom: -3px; 
 .filter li a{ display: inline-block; font-size: .8rem; color: #788487;}
 .filter li.current-cat a{ color: #003878; font-weight: bold;}
 
+
 /* home */
 .home .page-title{ display: none;}
 
+#worry{ background-image: url(assets/images/worry.png); background-repeat: no-repeat; background-position: center center; background-size: auto 240px;}
+#worry h2, #worry h3, #worry ul, #worry p{ display: block; width: 100%; text-align: center;}
+#worry h2 b{ font-size: 3rem; color: red;}
+#worry ul{ margin: 2.625rem 0; text-align: left;}
+#worry ul li{ display: block; padding-left: 15px; line-height: 3; text-align: left;  font-size: 1rem; color: #000;}
+#worry ul li span{ margin-right: 10px; padding: 10px; background: red; border-radius: 50%; color: #fff; opacity: .6;}
+#worry p{ margin: 20px auto 0; padding: 20px 30px; width: 90%; background: #fff;
+box-shadow: 5px 10px 4px 0 rgba(0,0,0,0.3);}
+#worry p a{ margin-top: 20px;}
+
+#clients{ background: #E7F2FF;}
+
+#hot .shop-item-thumb img,
+#news .post-preview img{ height: 233px;}
+
+
+#faq{}
+#faq .accordion-item-header{ background: #276344;}
+#faq .accordion-item-header:hover{ background: #26558C;}
+#faq .accordion-item-header h6 a{ color: #fff;}
+#faq .accordion-item-body{ padding: 20px; background: #fff; text-indent: 2em;}
+#faq .widget a{ color: #fff;}
+
+
 
 @media (max-width: 575.98px){
-header.header-small .inner-brand{ margin-top: .5rem; background-size: auto 65%;}
+.header.header-small .inner-brand{ margin-top: .5rem; background-size: auto 65%;}
+.header .pin{ font-size: 15px;}
+.header .pin i{ font-size: 18px;}
+#faq .textwidget{ text-align: center;}
 }
 
 @media (max-width: 991.98px){
@@ -61,9 +98,18 @@ header.header-small .inner-brand{ margin-top: .5rem; background-size: auto 65%;}
 }
 
 @media (min-width: 992px) {
+.header .pin{ right: 20px; top: 15px; font-size: 20px; }
+.header .pin i{ top: 3px; margin-right: 10px; font-size: 30px; }
+.header-small .pin{ top: 10px; }
+
 .inner-nav > ul > li{ line-height: 74px;}
 header.header-small .inner-nav > ul > li{ line-height: 60px;}
 .inner-nav > ul > li.dropdown .menu-item{ line-height: 1.5;}
 .inner-nav .sub-menu{column-count: 3;}
+
+#worry ul li{ display: inline-block; width: 36%; }
+#worry ul li:nth-child(even){ float: right;}
+#worry p{ width: 40%;}
+
 }
 
