@@ -7,8 +7,8 @@ html{ font-size: 20px;}
 
 .header{ opacity: .85;}
 .btn-brand, .page-item.active .page-link{ background-color: #003878; border-color: #003878;}
-.header .pin{ position: absolute; right: 60px; top: 20px; font-size: 18px; color: #0D4273;}
-.header .pin i{ position: relative; top: 3px; margin-right: 6px; font-size: 24px; color: #0D4F2A;}
+.header .pin{ position: absolute; right: 60px; top: 20px; font-size: 18px; color: #2EB1D7;}
+.header .pin i{ position: relative; top: 3px; margin-right: 6px; font-size: 24px; color: #2EB1D7;}
 .header-small .pin{ top: 15px; }
 
 .inner-brand{ display: inline-block; width: 7.2rem; height: 2.8rem; background: url(assets/images/logo.png) no-repeat; background-size: auto 100%; text-indent: -100vw;}
@@ -61,18 +61,15 @@ header.header-transparent .inner-nav > ul > li.active > a::after{ bottom: -3px; 
 
 #worry{ background-image: url(assets/images/worry.png); background-repeat: no-repeat; background-position: center center; background-size: auto 240px;}
 #worry h2, #worry h3, #worry ul, #worry p{ display: block; width: 100%; text-align: center;}
-#worry h2 b{ font-size: 3rem; color: red;}
+#worry h2 b{ font-size: 3rem; color: #2EB1D7;}
 #worry ul{ margin: 2.625rem 0; text-align: left;}
 #worry ul li{ display: block; padding-left: 15px; line-height: 3; text-align: left;  font-size: 1rem; color: #000;}
-#worry ul li span{ margin-right: 10px; padding: 10px; background: red; border-radius: 50%; color: #fff; opacity: .6;}
+#worry ul li span{ margin-right: 10px; padding: 10px; background: #2EB1D7; border-radius: 50%; color: #fff; opacity: .6;}
 #worry p{ margin: 20px auto 0; padding: 20px 30px; width: 90%; background: #fff;
 box-shadow: 5px 10px 4px 0 rgba(0,0,0,0.3);}
 #worry p a{ margin-top: 20px;}
 
 #clients{ background: #E7F2FF;}
-
-#hot .shop-item-thumb img,
-#news .post-preview img{ height: 233px;}
 
 
 #faq{}
@@ -110,6 +107,9 @@ header.header-small .inner-nav > ul > li{ line-height: 60px;}
 #worry ul li{ display: inline-block; width: 36%; }
 #worry ul li:nth-child(even){ float: right;}
 #worry p{ width: 40%;}
+
+#hot .shop-item-thumb img,
+#news .post-preview img{ height: 233px;}
 
 }
 
