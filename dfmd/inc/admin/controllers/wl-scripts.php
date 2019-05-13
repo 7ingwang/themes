@@ -21,7 +21,7 @@ function dfmd_scripts_head() {
     wp_enqueue_style( 'icons', get_theme_file_uri( '/assets/css/icons.css' ) );
     wp_enqueue_style( 'plugins', get_theme_file_uri( '/assets/css/plugins.min.css' ) );
     wp_enqueue_style( 'template', get_theme_file_uri( '/assets/css/template.css' ) );
-    wp_enqueue_style( 'style', get_theme_file_uri( 'style.css' ) );
+    wp_enqueue_style( 'style', get_theme_file_uri( 'style.css?0513' ) );
     
 
 }
