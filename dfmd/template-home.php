@@ -7,13 +7,13 @@ get_header(); ?>
 
 
             <!-- Hero-->
-            <section class="module-cover-slides fullscreen">
+            <section class="module-cover-slides">
                 <ul class="slides-container">
                     <li class="parallax text-center" data-overlay="0"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/module-1.jpg" alt="">
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-12">
-                                    <h1 class="m-b-20"><strong>无毒地坪专家</strong></h1>
+                                    <h1 class="m-b-20" style="margin-top: 6rem;"><strong>无毒地坪专家</strong></h1>
                                     <p class="m-b-40">NON-TOXIC FLOOR PAINT EXPERT</p>
                                 </div>
                             </div>
@@ -30,12 +30,11 @@ get_header(); ?>
             </section>
             <!-- Hero end-->
 
-			<section class="module module-cover-pink text-center" id="worry">
+			<section class="module text-center" id="worry">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12 m-auto text-center"></div>
 							<h2>还在为<b>选择地坪</b>而烦恼吗？</h2>
-							<h3>Still worrying about choosing a floor?</h3>
 							<ul>
 								<li><span>01</span>地坪成本太高怎么办？</li>
 								<li><span>02</span>地坪使用年限太短怎么办？</li>
@@ -44,7 +43,10 @@ get_header(); ?>
 								<li><span>05</span>地坪为什么会裂缝？</li>
 								<li><span>06</span>选择的公司售后没人管怎么办？</li>
 							</ul>
-							<p>您所担忧的，我们已经通通帮你想到专业的解决方案及优良的产品，实实在在帮你解决问题<a href="/contact" class="btn btn-success btn-sm">立即咨询</a></p>
+              <div class="tips">
+						      <p>您所担忧的，我们已经通通帮你想到专业的解决方案及优良的产品，实实在在帮你解决问题</p>
+                  <a href="/contact" class="btn btn-success btn-sm">立即咨询</a>
+              </div>
 						</div>
 					</div>
 				</div>
@@ -77,7 +79,7 @@ get_header(); ?>
                     <div class="row">
                         <div class="col-lg-3 col-md-6">
                             <div class="icon-box text-center">
-                                <a href="http://dfmd.smartwell.cn/service">
+                                <a href="http://www.dongfangmeidi.com/service">
 	                                <div class="icon-box-icon"><span class="icon-paint-format"></span></div>
 	                            </a>
                                 <div class="icon-box-title">
@@ -90,7 +92,7 @@ get_header(); ?>
                         </div>
                         <div class="col-lg-3 col-md-6">
                             <div class="icon-box text-center">
-                                <a href="http://dfmd.smartwell.cn/scope">
+                                <a href="http://www.dongfangmeidi.com/scope">
 	                                <div class="icon-box-icon"><span class="icon-road"></span></div>
 	                            </a>
                                 <div class="icon-box-title">
@@ -103,7 +105,7 @@ get_header(); ?>
                         </div>
                         <div class="col-lg-3 col-md-6">
                             <div class="icon-box text-center">
-	                            <a href="http://dfmd.smartwell.cn/process">
+	                            <a href="http://www.dongfangmeidi.com/process">
                                 	<div class="icon-box-icon"><span class="icon-list-numbered"></span></div>
                                 </a>
                                 <div class="icon-box-title">
@@ -116,7 +118,7 @@ get_header(); ?>
                         </div>
                         <div class="col-lg-3 col-md-6">
                             <div class="icon-box text-center">
-	                            <a href="http://dfmd.smartwell.cn/city">
+	                            <a href="http://www.dongfangmeidi.com/city">
                                 <div class="icon-box-icon"><span class="icon-earth"></span></div>
                                 </a>
                                 <div class="icon-box-title">
@@ -125,7 +127,7 @@ get_header(); ?>
                                 <div class="icon-box-content">
                                     <p>提供传统的产品和施工服务</p>
                                 </div>
-      
+
                             </div>
                         </div>
                     </div>
@@ -157,10 +159,10 @@ get_header(); ?>
 						query_posts($args);
 						if(have_posts()) : while (have_posts()) : the_post();
 						?>
-						
+
 						<div class="col-md-4">
                             <div class="shop-grid-item">
-                                <div class="shop-item-thumb"><a href="<?php the_permalink(); ?>"><img src="<?php echo catch_that_image();?>" alt="<?php the_title(); ?>"></a>
+                                <div class="shop-item-thumb"><a href="<?php the_permalink(); ?>"><img src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>"></a>
                                     <div class="shop-item-hidden"><a class="btn btn-new-white" href="<?php the_permalink(); ?>">详细了解</a></div>
                                 </div>
                                 <div class="shop-item-captions">
@@ -168,8 +170,8 @@ get_header(); ?>
                                 </div>
                             </div>
                         </div>
-		
-                        <?php endwhile; endif; wp_reset_query(); ?> 
+
+                        <?php endwhile; endif; wp_reset_query(); ?>
                     </div>
                 </div>
             </section>
@@ -190,7 +192,7 @@ get_header(); ?>
                         </div>
                     </div>
                     <div class="row row-post-masonry">
-                        
+
 
 						<?php
 						$args=array(
@@ -200,7 +202,7 @@ get_header(); ?>
 						query_posts($args);
 						if(have_posts()) : while (have_posts()) : the_post();
 						?>
-	                        
+
 	                    <!-- Post-->
 	                    <div class="col-md-4 post-item">
                             <article class="post">
@@ -208,7 +210,7 @@ get_header(); ?>
                                 <div class="post-wrapper">
                                     <div class="post-header">
                                         <h2 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-                                        <p class="post-date"> 
+                                        <p class="post-date">
 											<?php echo esc_html( wl_theme_get_post_publish_date( get_the_id() ) ); ?>
 				                		</p>
                                     </div>
@@ -224,14 +226,14 @@ get_header(); ?>
                             </article>
                         </div>
                         <!-- Post end-->
-                            
-						<?php endwhile; endif; wp_reset_query(); ?> 
-                        
+
+						<?php endwhile; endif; wp_reset_query(); ?>
+
                     </div>
                 </div>
             </section>
             <!-- Posts end-->
-            
+
             <!-- Clients-->
             <section class="module module-cover-blue" id="clients">
                 <div class="container">
@@ -267,7 +269,7 @@ get_header(); ?>
                 </div>
             </section>
             <!-- Clients end-->
-            
+
             <!-- FAQs-->
             <section class="module module-cover-green" id="faq">
                 <div class="container">
@@ -279,8 +281,8 @@ get_header(); ?>
                     <div class="row">
                         <div class="col-lg-9">
                             <div class="accordion" id="accordion1">
-	                            
-	                            
+
+
 		                    <?php
 								$args=array(
 								    'cat' => 14,   // 分类ID
@@ -291,9 +293,9 @@ get_header(); ?>
 								if(have_posts()) : while (have_posts()) : the_post();
 								$count++;
 							?>
-		                                            
+
 	                            <!-- Post-->
-	                 
+
                                 <div class="accordion-item <?php if($count < 2) echo "show";?>">
                                     <div class="accordion-item-header">
                                         <h6><a class="accordion-link  <?php if($count >1) echo "collapsed";?>" data-toggle="collapse" href="#collapse-<?php the_ID(); ?>"><?php the_title(); ?></a></h6>
@@ -306,10 +308,10 @@ get_header(); ?>
                                 </div>
                                 <!-- Post end-->
                             <?php endwhile; endif; wp_reset_query(); ?>
-                            
 
-                         
-                            
+
+
+
                             </div>
                         </div>
                         <div class="col-lg-3">
