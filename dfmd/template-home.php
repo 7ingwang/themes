@@ -60,7 +60,7 @@ get_header(); ?>
                         <div class="col-md-6 m-auto text-center">
                             <h2>东方美地</h2>
                             <h3>无毒地坪专家</h3>
-							<p>东方美地(北京)建筑装修装饰工程有限公司是一家集研、产、销、施工于一体的科技型地材企业，创始团队集聚了业界高学历、技术经验丰富的多名专家，专注于环保地坪领域。 团队凭借多年的行业经验和领先的技术，成为北京乃至华北地区无毒地坪行业领跑者。</p>
+							<p>东方美地(北京)建筑装修装饰工程有限公司是一家集研、产、销、施工于一体的科技型地材企业，创始团队集聚了业界高学历、技术经验丰富的多名专家，专注于环保地坪领域。 团队凭借多年的行业经验和领先的技术，成为北京乃至全国无毒地坪行业领跑者。</p>
                         </div>
                     </div>
                     <div class="col-md-12">
@@ -380,7 +380,7 @@ get_header(); ?>
             <section class="module no-gutters p-0">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-md-12"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/module-bottom.jpg" alt=""></div>
+                        <div class="col-md-12" style="text-align: center;"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/module-bottom.jpg" alt="" style="margin: 0 auto;"></div>
                     </div>
                 </div>
             </section>
