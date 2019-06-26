@@ -15,15 +15,17 @@
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?php wp_head(); ?>
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 </head>
 
 <body <?php body_class(); ?> >
 
 	<!-- Header-->
-    <header class="header header-transparent">
+    <header class="header">
         <div class="container-fluid">
             <!-- Brand-->
-            <div class="inner-header"><a class="inner-brand" href="<?php echo esc_url( home_url() ); ?>"><?php bloginfo( 'name' ); ?></a></div>
+            <div class="inner-header"><a class="inner-brand" href="<?php echo esc_url( home_url() ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png"></a></div>
+            <span class="pin"><i class="icon-whatsapp"></i>400 005 8857</span>
             <!-- Navigation-->
             <div class="inner-navigation collapse">
                 <div class="inner-nav">

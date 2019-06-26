@@ -5,18 +5,22 @@
 
 get_header(); ?>
 
-	<!-- Hero-->
-	<section class="module-cover parallax text-center" data-background="<?php echo get_template_directory_uri(); ?>/assets/images/module-7.jpg" data-overlay="0.1">
-	    <div class="container">
-	        <div class="row">
-	            <div class="col-md-12">
-					<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-	                <?php get_breadcrumbs(); ?>
-	            </div>
-	        </div>
-	    </div>
-	</section>
-	<!-- Hero end-->
+	<section class="module-page-title bg-gray bg-img" data-background="<?php echo get_template_directory_uri(); ?>/assets/images/module-7.jpg" data-overlay="0.1">
+    	<div class="container">
+    	    <div class="row align-items-center">
+    	        <div class="col-md-6">
+    	            <div class="page-title-desc">
+    	                <h1 class="page-title-heading"><?php the_title(); ?></h1>
+    	            </div>
+    	        </div>
+    	        <div class="col-md-6">
+    	            <ol class="breadcrumb">
+    	                <?php get_breadcrumbs(); ?>
+    	            </ol>
+    	        </div>
+    	    </div>
+    	</div>
+    </section>
 	
 	<!-- Blog-->
     <section class="module">
@@ -40,7 +44,7 @@ get_header(); ?>
                             <h6>服务热线</h6>
                         </div>
                         <div class="icon-box-content">
-                            <p>电话：010-83802993</p>
+                            <p>电话：400 005 8857</p>
                             <p>传真：010-83895355</p>
                         </div>
                     </div>
